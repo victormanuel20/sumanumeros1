@@ -1,14 +1,16 @@
 package org.example;
 
+import java.util.List;
 import java.util.ArrayList;
 
 public class Manager {
-    private list<Integer> numeros;
+    private List<Integer> numeros;
 
     public Manager() {
         this.numeros = new ArrayList<>();
     }
-    public void addNumero(Int numero) {
+
+    public void addNumero(int numero) {
         this.numeros.add(numero);
     }
 
@@ -20,5 +22,7 @@ public class Manager {
         return suma;
     }
 
-
+    public void imprimirSuma() {
+        System.out.println("La suma de los números es: " + sumarNumeros());
+    }
 }
