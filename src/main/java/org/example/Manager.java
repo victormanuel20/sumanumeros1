@@ -11,4 +11,14 @@ public class Manager {
     public void addNumero(Int numero) {
         this.numeros.add(numero);
     }
+
+    public int sumarNumeros() {
+        int suma = 0;
+        for (int numero : numeros) {
+            suma += numero;
+        }
+        return suma;
+    }
+
+
 }
